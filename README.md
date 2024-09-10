@@ -9,8 +9,8 @@ This repository contains the material for the SAP TechEd 2024 session called "AI
 This session introduces attendees to integrating orchestration capabilities of Generative AI Hub into their own scenarios using SAP Cloud SDK for AI (JavaScript) or SAP generative AI hub SDK (Python).
 Accordingly this session offers two parallel tracks:
 
-- [SAP Cloud SDK for AI (JavaScript)](<sap-cloud-sdk-for-ai-(javascript)>)
-- [SAP generative AI hub SDK (Python)](<sap-generative-ai-hub-sdk-(python)>)
+- [SAP Cloud SDK for AI (JavaScript)](<sap-cloud-sdk-for-ai-javascript>)
+- [SAP generative AI hub SDK (Python)](<sap-generative-ai-hub-sdk-python>)
 
 Both tracks cover identical core concepts and practical applications, differing only in the programming language and SDK utilized. Participants can choose the track that best aligns with their expertise or opt to experience both to broaden their understanding.
 
