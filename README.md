@@ -16,7 +16,14 @@ Both tracks cover identical core concepts and practical applications, differing 
 
 By the end of this session, attendees will have gained practical experience in leveraging these powerful SDKs to enhance their AI-driven solutions, regardless of their chosen programming environment. Join us to unlock the full potential of Generative AI in your projects and stay at the forefront of AI integration.
 
+## Shared Requirements
+
+1. Clone the repository. Do so by using your favorite Git client. If you are using the Git command line interface use: `git clone https://github.com/SAP-samples/teched2024-AI180.git`.
+2. TODO: add API access instructions
+
 ## SAP Cloud SDK for AI (JavaScript)
+
+tbd
 
 ### Requirements
 
@@ -40,9 +47,26 @@ Start the exercises [here](https://developers.sap.com/tutorials/abap-environment
 
 ## SAP generative AI hub SDK (Python)
 
+This track introduces attendees to using orchestration capabilities of Generative AI Hub using the [SAP generative AI hub SDK](https://pypi.org/project/generative-ai-hub-sdk/) in Python.
+
 ### Requirements
 
-The requirements to follow the exercises in this repository are...
+1. First up make sure to satisfy the requirements as described in the [Shared Requirements](#shared-requirements) section.
+2. Ensure a supported and stable version of **Python** is installed on your system.
+3. Open up a terminal session at the root of the cloned repository of this session. It is strongly suggested to create a virtual Python environment for following along to avoid conflicts with other packages that could be already installed on your system. A virtual environment can be created using `python -m venv ENV`. Note: Your Python executable might also be called `python3`. Activate the environment in your current terminal session using either `source ENV/bin/activate` for Unix like systems (MacOS and Linux) or by running the script `ENV/Scripts/Activate.ps1` for Windows. Make sure to execute the following steps within the context of the newly created Python environment.
+4. Install the [SAP generative AI hub SDK](https://pypi.org/project/generative-ai-hub-sdk/) using pip: `pip install "generative-ai-hub-sdk[all]"`.
+5. Setup authentication by setting the following environment variables using the demo credentials provided to you. Make sure the environment variables are in effect in context of your development environment. You will find the correct values named accordingly in the file under the key `python`:
+
+   ```bash
+   AICORE_AUTH_URL=<demo-credentials-file.python.AICORE_AUTH_URL>
+   AICORE_BASE_URL=<demo-credentials-file.python.AICORE_BASE_URL>
+   AICORE_CLIENT_ID=<demo-credentials-file.python.AICORE_CLIENT_ID>
+   AICORE_CLIENT_SECRET=<demo-credentials-file.python.AICORE_CLIENT_SECRET>
+   AICORE_ORCHESTRATION_DEPLOYMENT_URL=<demo-credentials-file.python.AICORE_ORCHESTRATION_DEPLOYMENT_URL>
+   AICORE_RESOURCE_GROUP=<demo-credentials-file.python.AICORE_RESOURCE_GROUP>
+   ```
+
+6. You should now be able to open your preferred development environment for Python and start with the exercises. Make sure that the created virtual environment and the set environment variables are used within you development environment.
 
 ### Exercises
 
