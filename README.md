@@ -51,11 +51,11 @@ This track introduces attendees to using orchestration capabilities of Generativ
 
 ### Requirements
 
-1. First up make sure to satisfy the requirements as described in the [Shared Requirements](#shared-requirements) section.
-2. Ensure a supported and stable version of **Python** is installed on your system.
-3. Open up a terminal session at the root of the cloned repository of this session. It is strongly suggested to create a virtual Python environment for following along to avoid conflicts with other packages that could be already installed on your system. A virtual environment can be created using `python -m venv ENV`. Note: Your Python executable might also be called `python3`. Activate the environment in your current terminal session using either `source ENV/bin/activate` for Unix like systems (MacOS and Linux) or by running the script `ENV/Scripts/Activate.ps1` for Windows. Make sure to execute the following steps within the context of the newly created Python environment.
+1. Make sure you meet all the requirements as described in the [Shared Requirements](#shared-requirements) section.
+2. Verify that you have a supported and stable version of **Python** installed on your system.
+3. Open up a terminal session at the root of the cloned repository. It is highly suggested to create a virtual Python environment for following along to avoid conflicts with other packages that could be already installed on your system. A virtual environment can be created using `python -m venv ENV`. Note: Your Python executable might also be called `python3`. Activate the environment in your current terminal session using either `source ENV/bin/activate` for Unix like systems (MacOS and Linux) or by running the script `ENV/Scripts/Activate.ps1` for Windows. Make sure that all subsequent steps are executed within the context of this newly created virtual environment.
 4. Install the [SAP generative AI hub SDK](https://pypi.org/project/generative-ai-hub-sdk/) using pip: `pip install "generative-ai-hub-sdk[all]"`.
-5. Setup authentication by setting the following environment variables using the demo credentials provided to you. Make sure the environment variables are in effect in context of your development environment. You will find the correct values named accordingly in the file under the key `python`:
+5. Configure authentication by setting the following environment variables using the demo credentials. You will find the appropriate values (named accordingly) in the file under the key `python`:
 
    ```bash
    AICORE_AUTH_URL=<demo-credentials-file.python.AICORE_AUTH_URL>
@@ -66,9 +66,11 @@ This track introduces attendees to using orchestration capabilities of Generativ
    AICORE_RESOURCE_GROUP=<demo-credentials-file.python.AICORE_RESOURCE_GROUP>
    ```
 
-6. You should now be able to open your preferred development environment for Python and start with the exercises. Make sure that the created virtual environment and the set environment variables are used within you development environment.
+6. You can now open your preferred development environment for Python and start with the exercises. Ensure that the created virtual environment and the set environment variables are used within your development environment.
 
 ### Exercises
+
+The exercises are comprised of notebooks demonstrating how to use the SAP generative AI hub SDK to interact with the Orchestration Service, enabling you to build AI-driven workflows by combining multiple modules such as templating, large language models (LLM), and content filtering.
 
 - [Getting Started](exercises/python/ex0/)
 - [Exercise 1 - First Exercise Description](exercises/python/ex1/)
