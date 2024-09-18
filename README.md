@@ -73,12 +73,9 @@ This track introduces attendees to using orchestration capabilities of Generativ
 The exercises are comprised of notebooks demonstrating how to use the SAP generative AI hub SDK to interact with the Orchestration Service, enabling you to build AI-driven workflows by combining multiple modules such as templating, large language models (LLM), and content filtering.
 
 - [Getting Started](exercises/python/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/python/ex1/)
-  - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/python/ex1#exercise-11-sub-exercise-1-description)
-  - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/python/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/python/ex2/)
-  - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/python/ex2#exercise-21-sub-exercise-1-description)
-  - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/python/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 1 - Orchestration Templating](exercises/python/ex0.ipynb)
+- [Exercise 2 - Orchestration Content Filtering](exercises/python/ex1.ipynb)
+- [Exercise 3 - Orchestration Chatbot](exercises/python/ex2.ipynb)
 
 Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
 
