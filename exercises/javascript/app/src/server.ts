@@ -41,10 +41,10 @@ app.get('/llm', async (req, res) => {
 app.get('/embedding', async (req, res) => {
   try {
     const result = await computeEmbedding();
-    if (!result.length) {
+    if (!result?.length) {
       res.status(500).send('No embedding vector returned.');
     } else {
-      res.send('Number crunching success, got a nice vector.');
+      res.send(res.send(`Number crunching success, got a nice vector: ${result[0]}...`));
     }
   } catch (error: any) {
     console.error(error);
