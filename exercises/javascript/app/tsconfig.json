@@ -1,5 +1,4 @@
 {
-
   "compilerOptions": {
     "target": "ES2022",
     "module": "Node16",
@@ -7,7 +6,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports":true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
@@ -15,12 +14,8 @@
     "outDir": "./dist",
     "tsBuildInfoFile": "./dist/.tsbuildinfo",
     "composite": true,
-    "lib": [
-      "esnext"
-    ]
+    "lib": ["esnext"]
   },
-  "include": [
-    "src/**/*.ts"
-  ],
+  "include": ["src/**/*.ts"],
   "exclude": ["dist/**/*", "**/*.test.ts", "node_modules/**/*"]
 }

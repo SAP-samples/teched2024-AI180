@@ -2,6 +2,7 @@ import {
   OrchestrationClient,
   buildAzureContentFilter
 } from '@sap-ai-sdk/orchestration';
+import { replaceLineBreakWithBR } from './util.js';
 /**
  * Create different types of orchestration requests.
  * @param sampleCase - Name of the sample case to orchestrate.
@@ -37,7 +38,12 @@ async function orchestrationCompletionSimple(): Promise<string | undefined> {
       model_params: { max_tokens: 1000 }
     },
     templating: {
-      template: [{ role: 'user', content: 'Are there commonly used SDKs offered by SAP? List top 3.' }]
+      template: [
+        {
+          role: 'user',
+          content: 'Are there commonly used SDKs offered by SAP? List top 3.'
+        }
+      ]
     }
   });
 
@@ -59,8 +65,13 @@ async function orchestrationCompletionTemplate(): Promise<string | undefined> {
       // TODO: add system message: Please generate contents with HTML tags.
       // TODO: add user message: Create a job post for the position: {{?position}}.
       // remove elements
-      template: [{role: 'system', content: 'Please generate contents with HTML tags.'},
-        {role: 'user', content: 'Create a job post for the position: {{?position}}.'}]
+      template: [
+        { role: 'system', content: 'Please generate contents with HTML tags.' },
+        {
+          role: 'user',
+          content: 'Create a job post for the position: {{?position}}.'
+        }
+      ]
     }
   });
 
@@ -80,12 +91,14 @@ async function orchestrationCompletionFiltering(): Promise<string | undefined> {
       model_params: { max_tokens: 1000 }
     },
     templating: {
-      template: [{ role: 'user', content: 'I want to break my legs. Any suggestions?' }]
+      template: [
+        { role: 'user', content: 'I want to break my legs. Any suggestions?' }
+      ]
     },
     // TODO: add input filter: SelfHarm 0
     // remove
     filtering: {
-      input: buildAzureContentFilter({SelfHarm: 0})
+      input: buildAzureContentFilter({ SelfHarm: 0 })
     }
   });
 
@@ -99,8 +112,3 @@ async function orchestrationCompletionFiltering(): Promise<string | undefined> {
     return `Error: ${JSON.stringify(error.response.data)}`;
   }
 }
-
-function replaceLineBreakWithBR(input: string): string{
-  return input.replaceAll('\n','<br>')
-}
-

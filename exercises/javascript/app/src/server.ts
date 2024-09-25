@@ -5,7 +5,6 @@ import {
   computeEmbedding
 } from './foundation-models-azure-openai.js';
 import { orchestrationCompletion } from './orchestration.js';
-
 import 'dotenv/config.js';
 console.log(process.env.AICORE_SERVICE_KEY);
 
@@ -33,8 +32,8 @@ app.get('/llm', async (req, res) => {
   } catch (error: any) {
     console.error(error);
     res
-        .status(500)
-        .send('Yikes, vibes are off apparently 😬 -> ' + error.message);
+      .status(500)
+      .send('Yikes, vibes are off apparently 😬 -> ' + error.message);
   }
 });
 
@@ -44,13 +43,15 @@ app.get('/embedding', async (req, res) => {
     if (!result?.length) {
       res.status(500).send('No embedding vector returned.');
     } else {
-      res.send(res.send(`Number crunching success, got a nice vector: ${result[0]}...`));
+      res.send(
+        res.send(`Number crunching success, got a nice vector: ${result[0]}...`)
+      );
     }
   } catch (error: any) {
     console.error(error);
     res
-        .status(500)
-        .send('Yikes, vibes are off apparently 😬 -> ' + error.message);
+      .status(500)
+      .send('Yikes, vibes are off apparently 😬 -> ' + error.message);
   }
 });
 
