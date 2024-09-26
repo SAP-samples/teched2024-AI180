@@ -34,7 +34,7 @@ async function orchestrationCompletionSimple(): Promise<string | undefined> {
   // remove
   const orchestrationClient = new OrchestrationClient({
     llm: {
-      model_name: 'gpt-4o',
+      model_name: 'meta--llama3-70b-instruct',
       model_params: { max_tokens: 1000 }
     },
     templating: {
