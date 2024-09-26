@@ -17,25 +17,22 @@ Both tracks cover identical core concepts and practical applications, differing 
 By the end of this session, attendees will have gained practical experience in leveraging these powerful SDKs to enhance their AI-driven solutions, regardless of their chosen programming environment. Join us to unlock the full potential of Generative AI in your projects and stay at the forefront of AI integration.
 
 > [!IMPORTANT]  
-> - As a Jump Start session, we can only offer free test systems to limited number of participants.
-> - To get your test system, you have to follow our processes for sending a request.
-> - The First-Come-First-Served rule is applied, and only the first **100** participants will get their individual test systems.
-> - We will maintain a waiting list for the rest of people.
+> - As part of this **Jump Start** session, we are offering free access to a limited number of test systems.
+> - To receive your test system, you must follow the outlined process for submitting a request.
 
 > [!WARNING]
 > ## Disclaimer
 > 
-> Please apply for the test systems, only if you accept the following statements:
-> 1. Please only send **one request** for your own.
-> 1. Requesting a test system on behalf of others is **prohibited**.
-> 1. You understand, you might **NOT** get a test system, if you are not part of the first 100 participants.
-> 1. You will receive the system details via email within **24 hours**.
-> 1. The test system will be **disabled** at 17:00 CEST on Oct 16 (Wed).
-> 1. Both input and output **token limit** of LLMs are set to 1000.
-> 1. A global rate limit is applied for every minute.
+> By applying for access to the test systems, you agree to the following terms:
+> 1. **Single Request Policy**: Please submit only one request per individual. Submitting requests on behalf of others is strictly **prohibited**.
+> 1. **Limited Availability**: Access to the test system is limited to the first **100** participants. If you are not selected, you may not receive a test system.
+> 1. **Email Notification**: If approved, you will receive system access details via email within **24 hours**.
+> 1. **System Duration**: The test system will be disabled at 17:00 CEST on Wed, Oct 16.
+> 1. **Token and Rate Limits**: Each LLM has an input and output token limit of 1000, and a global rate limit applies per minute.
+> 1. **Testing Purposes Only**: The test system is intended solely for testing purposes and not for any productive or commercial use.
 > 1. The test system is offered for testing purposes, instead of any productive usage.
-> 1. When detecting **malicious usage**, we will inform you, **terminate** the test system immediately and depending on the severity, SAP has the right to pursue a lawsuit. A typical example of malicious usage is to reach the rate limit every minute, every hour and more than 8 hours per day.
-> 1. We only offer two models: `gemini-1.5-flash` and `meta--llama3-70b-instruct`. 
+> 2. **Malicious Usage**: Any detection of malicious usage will result in immediate termination of your test system. Depending on the severity of the abuse, legal action may be pursued. An example of malicious behavior includes repeatedly hitting the rate limit every minute, for more than 8 hours a day.
+> 1. **Available Models**: We currently offer two models for testing: `gemini-1.5-flash` and `meta-llama3-70b-instruct`.
 
 ## Shared Requirements
 
