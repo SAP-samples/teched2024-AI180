@@ -23,7 +23,8 @@ By the end of this session, attendees will have gained practical experience in l
 > We will maintain a waiting list for the rest of people.
 
 > [!WARNING]
-> Disclaimer:
+> ## Disclaimer
+> 
 > Please apply for the test systems, only if you accept the following statements:
 > 1. Please only send **one request** for your own.
 > 1. Requesting a test system on behalf of others is **prohibited**.
