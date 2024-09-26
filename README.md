@@ -17,10 +17,10 @@ Both tracks cover identical core concepts and practical applications, differing 
 By the end of this session, attendees will have gained practical experience in leveraging these powerful SDKs to enhance their AI-driven solutions, regardless of their chosen programming environment. Join us to unlock the full potential of Generative AI in your projects and stay at the forefront of AI integration.
 
 > [!IMPORTANT]  
-> As a Jump Start session, we can only offer free test systems to limited number of participants. 
-> To get your test system, you have to follow our processes for sending a request. 
-> The First-Come-First-Served rule is applied, and only the first **100** participants will get their individual test systems.
-> We will maintain a waiting list for the rest of people.
+> - As a Jump Start session, we can only offer free test systems to limited number of participants.
+> - To get your test system, you have to follow our processes for sending a request.
+> - The First-Come-First-Served rule is applied, and only the first **100** participants will get their individual test systems.
+> - We will maintain a waiting list for the rest of people.
 
 > [!WARNING]
 > ## Disclaimer
