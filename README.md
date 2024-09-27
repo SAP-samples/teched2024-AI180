@@ -45,7 +45,7 @@ git clone https://github.com/SAP-samples/teched2024-AI180.git
 3. **Select Your Programming Language**: 
     - Choose between [JavaScript](exercises/javascript/README.md) or [Python](exercises/python/README.md) by clicking the respective links.
 
-#### Template for Requesting the Test System
+### Template for Requesting the Test System
 ```
 Email Subject: [TechEd 2024 AI180] Request: Access to Test System
 

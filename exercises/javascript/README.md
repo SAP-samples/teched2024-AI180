@@ -2,7 +2,7 @@
 
 This track introduces attendees to using orchestration capabilities of SAP Generative AI Hub using the [SAP Cloud SDK for AI (JavaScript)](https://github.com/SAP/ai-sdk-js).
 
-### Prerequisite
+## 1. Prerequisite
 
 1. Follow all the instructions as described in the [How to Start](../../README.md#how-to-start) section.
 2. After receiving the test system access details via email, update the [.env](app/.env), by using the attached file.
@@ -12,14 +12,14 @@ AICORE_SERVICE_KEY='{"clientid": "<demo-credentials-file.js.clientid>","clientse
 ```
 3. Install Node 20.
 
-### Project Structure
+## 2. Project Structure
 The [project](app) used for this session is an [Express](https://www.npmjs.com/package/express)-based web application.
 
-#### Dependencies
+### 2.1 Dependencies
 The necessary dependencies for the exercises are specified in the [package.json](app/package.json). 
 The SAP Cloud SDK for AI uses the scope `@sap-ai-sdk`, e.g., `@sap-ai-sdk/orchestration`, for npm packages.
 
-#### Related Source Code
+### 2.2 Related Source Code
 The [server.ts](app/src/server.ts) file defines the application, including the startup process, the list of exposed endpoints, and their implementation.
 
 The [orchestration.ts](app/src/orchestration.ts) file contains implementation details for calling the orchestration service using the client libraries provided by the SAP Cloud SDK.
