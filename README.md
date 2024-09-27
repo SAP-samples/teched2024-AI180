@@ -35,9 +35,15 @@ By the end of this session, attendees will have gained practical experience in l
 > 1. **Available Models**: We currently offer two models for testing: `gemini-1.5-flash` and `meta-llama3-70b-instruct`.
 
 ## How to Start
-1. **Apply for the test systems**: Use this [template](#template-for-requesting-the-test-system) and fill in your information and send it to `teched.2024.ai180.registration.bot@sap.com`.
-1. **Clone the repository**: Do so by using your favorite Git client. If you are using the Git command line interface use: `git clone https://github.com/SAP-samples/teched2024-AI180.git`.
-1. **Choose your programming language**: Continue by click either the [JS variant](./exercises/javascript/README.md) or the [Python variant](./exercises/python/README.md).
+1. **Apply for the Test Systems:**:
+    - Use this [template](#template-for-requesting-the-test-system), fill in your information and send it to `teched.2024.ai180.registration.bot@sap.com`.
+2. **Clone the Repository**:
+    - Clone the repository using your preferred Git client. If you’re using the Git command line interface, run the following command:
+```bash
+git clone https://github.com/SAP-samples/teched2024-AI180.git
+```
+3. **Select Your Programming Language:**: 
+    - Choose between [JavaScript](./exercises/javascript/README.md) or [Python](./exercises/python/README.md) by clicking the respective links.
 
 ### Template for Requesting the Test System
 ```
