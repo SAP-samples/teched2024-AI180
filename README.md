@@ -1,4 +1,4 @@
-# AI180 - Build your own Generative AI Scenario in a Snap
+# AI180 - Build your own generative AI scenario for your use case
 
 ## Description
 
@@ -9,8 +9,8 @@ This repository contains the material for the SAP TechEd 2024 session called "AI
 This session introduces attendees to integrating orchestration capabilities of Generative AI Hub into their own scenarios using SAP Cloud SDK for AI (JavaScript) or SAP generative AI hub SDK (Python).
 Accordingly, this session offers two parallel tracks:
 
-- [SAP Cloud SDK for AI (JavaScript)](./exercises/javascript/README.md)
-- [SAP generative AI hub SDK (Python)](./exercises/python/README.md)
+- [SAP Cloud SDK for AI (JavaScript)](exercises/javascript/README.md)
+- [SAP generative AI hub SDK (Python)](exercises/python/README.md)
 
 Both tracks cover identical core concepts and practical applications, differing only in the programming language and SDK utilized. Participants can choose the track that best aligns with their expertise or opt to experience both to broaden their understanding.
 
@@ -43,7 +43,7 @@ By the end of this session, attendees will have gained practical experience in l
 git clone https://github.com/SAP-samples/teched2024-AI180.git
 ```
 3. **Select Your Programming Language**: 
-    - Choose between [JavaScript](./exercises/javascript/README.md) or [Python](./exercises/python/README.md) by clicking the respective links.
+    - Choose between [JavaScript](exercises/javascript/README.md) or [Python](exercises/python/README.md) by clicking the respective links.
 
 #### Template for Requesting the Test System
 ```
