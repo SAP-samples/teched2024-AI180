@@ -34,10 +34,20 @@ By the end of this session, attendees will have gained practical experience in l
 > 2. **Malicious Usage**: Any detection of malicious usage will result in immediate termination of your test system. Depending on the severity of the abuse, legal action may be pursued. An example of malicious behavior includes repeatedly hitting the rate limit every minute, for more than 8 hours a day.
 > 1. **Available Models**: We currently offer two models for testing: `gemini-1.5-flash` and `meta-llama3-70b-instruct`.
 
-## Shared Requirements
+## How to Start
+1. **Apply for the test systems**: Use this [template](#template-for-requesting-the-test-system) and fill in your information and send it to `teched.2024.ai180.registration.bot@sap.com`.
+1. **Clone the repository**: Do so by using your favorite Git client. If you are using the Git command line interface use: `git clone https://github.com/SAP-samples/teched2024-AI180.git`.
+1. **Choose your programming language**: Continue by click either the [JS variant](./exercises/javascript/README.md) or the [Python variant](./exercises/python/README.md).
 
-1. Clone the repository. Do so by using your favorite Git client. If you are using the Git command line interface use: `git clone https://github.com/SAP-samples/teched2024-AI180.git`.
-2. TODO: add API access instructions
+### Template for Requesting the Test System
+```
+Email Subject: [TechEd 2024 AI180] Request: Access to Test System
+
+Email Body:
+- Name: <Your-Name>
+- Company: <Your-Company>
+- Business Email Address: <Your-Business-Email-Address>
+```
 
 ## Contributing
 

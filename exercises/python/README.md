@@ -2,9 +2,9 @@
 
 This track introduces attendees to using orchestration capabilities of Generative AI Hub using the [SAP generative AI hub SDK](https://pypi.org/project/generative-ai-hub-sdk/) in Python.
 
-### Requirements
+### Prerequisite
 
-1. Make sure you meet all the requirements as described in the [Shared Requirements](#shared-requirements) section.
+1. Make sure you meet all the requirements as described in the [How to Start](../../README.md#how-to-start) section.
 2. Verify that you have a supported and stable version of **Python** installed on your system.
 3. Open up a terminal session at the root of the cloned repository. It is highly suggested to create a virtual Python environment for following along to avoid conflicts with other packages that could be already installed on your system. A virtual environment can be created using `python -m venv ENV`. Note: Your Python executable might also be called `python3`. Activate the environment in your current terminal session using either `source ENV/bin/activate` for Unix like systems (MacOS and Linux) or by running the script `ENV/Scripts/Activate.ps1` for Windows. Make sure that all subsequent steps are executed within the context of this newly created virtual environment.
 4. Install the [SAP generative AI hub SDK](https://pypi.org/project/generative-ai-hub-sdk/) using pip: `pip install "generative-ai-hub-sdk[all]"`.

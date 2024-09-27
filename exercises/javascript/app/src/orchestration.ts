@@ -47,7 +47,6 @@ async function orchestrationCompletionSimple(): Promise<string | undefined> {
     }
   });
 
-  // TODO: Call the orchestration service.
   // remove
   const response = await orchestrationClient.chatCompletion();
   // TODO: Return the response content.
