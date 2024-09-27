@@ -1,4 +1,3 @@
 .idea
 exercises/javascript/app/dist
 exercises/javascript/app/node_modules
-.env*
