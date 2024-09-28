@@ -14,7 +14,7 @@ npm -v
 
 ### 1. Navigate to the Application Directory:
 
-Assuming you are still on the root directory of the [teched2024-AI180](https://github.com/SAP-samples/teched2024-AI180) repository, run the following command.
+Assuming you are still in the root directory of the [teched2024-AI180 repository, navigate to the app folder:
 ```shell
 cd exercises/javascript/app
 ```
