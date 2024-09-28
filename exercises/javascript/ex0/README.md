@@ -54,7 +54,7 @@ If you encounter errors, try checking if port 8080 is in use:
 lsof -i :8080
 ```
 
-## Summary TODO
+## Summary 
+**Great job! Your Express-based application is up and running.**
 
-Now that you have ... 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+You’re now ready to move on to the next step. Continue to the [Exercise 1 - Getting LLM Access via Orchestration Service](ex1/README.md).

@@ -41,7 +41,7 @@ You will mainly work with this file during your exercises.
 The exercises are comprised of notebooks demonstrating how to use the SAP generative AI hub SDK to interact with the Orchestration Service, enabling you to build AI-driven workflows by combining multiple modules such as templating, large language models (LLM), and content filtering.
 
 - [Preparation](ex0/README.md)
-- [Exercise 2 - Orchestration Content Filtering](./ex2.ipynb)
+- [Exercise 1 - Getting LLM Access via Orchestration Service](ex1/README.md)
 - [Exercise 3 - Orchestration Chatbot](./ex3.ipynb)
 
 Start from [here](./ex0/README.md).
