@@ -33,6 +33,9 @@ Run the following to start the app locally:
 ```shell
 npm run local
 ```
+> [!TIP]
+> Using this command ensures that the application automatically restarts whenever you save changes to your source code.
+
 ### 4. Verify the Application is Running:
 After a few seconds, you should see the following log message:
 ```

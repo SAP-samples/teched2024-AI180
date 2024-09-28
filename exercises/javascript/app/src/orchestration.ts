@@ -31,33 +31,33 @@ export async function orchestrationCompletion(
 */
 
 async function orchestrationCompletionSimple(): Promise<any> {
-  // const orchestrationClient = new OrchestrationClient({
-  //   llm: {
-  //     model_name: 'gemini-1.5-flash',
-  //     model_params: { max_tokens: 1000 }
-  //   },
-  //   templating: {
-  //     template: [
-  //       {
-  //         role: 'user',
-  //         content: 'Are there commonly used SDKs offered by SAP? List top 3.'
-  //       }
-  //     ]
-  //   }
-  // });
-  // const response = await orchestrationClient.chatCompletion();
-  // return replaceLineBreakWithBR(response.getContent()!);
+  const orchestrationClient = new OrchestrationClient({
+    llm: {
+      model_name: 'meta--llama3-70b-instruct',
+      model_params: { max_tokens: 1000 }
+    },
+    templating: {
+      template: [
+        {
+          role: 'user',
+          content: 'What is SAP TechEd?'
+        }
+      ]
+    }
+  });
+  const response = await orchestrationClient.chatCompletion();
+  return replaceLineBreakWithBR(response.getContent()!);
 }
 
 async function orchestrationCompletionTemplate(): Promise<any> {
   const orchestrationClient = new OrchestrationClient({
     llm: {
-      model_name: 'mistralai--mixtral-8x7b-instruct-v01',
+      model_name: 'meta--llama3-70b-instruct',
       model_params: { max_tokens: 1000 }
     },
     templating: {
       template: [
-        { role: 'system', content: 'Please generate contents with HTML tags.' },
+        { role: 'system', content: 'You are a helpful assistant.' },
         {
           role: 'user',
           content: 'Create a job post for the position: {{?position}}.'
