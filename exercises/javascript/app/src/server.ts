@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import express from 'express';
 import { orchestrationCompletion } from './orchestration.js';
-// import 'dotenv/config.js';
-// console.log(process.env.AICORE_SERVICE_KEY);
+import 'dotenv/config.js';
+console.log(process.env.AICORE_SERVICE_KEY);
 
 const app = express();
 const port = 8080;

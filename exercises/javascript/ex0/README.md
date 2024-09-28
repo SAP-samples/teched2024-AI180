@@ -1,6 +1,6 @@
 # Preparation
 
-After completing these steps, you will have an [Express](https://www.npmjs.com/package/express)-based web application up and running.
+By completing these steps, you will have an [Express](https://www.npmjs.com/package/express)-based web application up and running.
 
 ### Prerequisites:
 - [ ] Node.js (v20) and npm installed.

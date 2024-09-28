@@ -3,6 +3,7 @@ import {
   buildAzureContentFilter
 } from '@sap-ai-sdk/orchestration';
 import { replaceLineBreakWithBR } from './util.js';
+
 /**
  * Create different types of orchestration requests.
  * @param sampleCase - Name of the sample case to orchestrate.
@@ -29,42 +30,32 @@ export async function orchestrationCompletion(
   mistralai--mixtral-8x7b-instruct-v01
 */
 
-async function orchestrationCompletionSimple(): Promise<string | undefined> {
-  // TODO: init orchestration client
-  // TODO: add user message: Are there commonly used SDKs offered by SAP? List top 3.
-  // remove
-  const orchestrationClient = new OrchestrationClient({
-    llm: {
-      model_name: 'meta--llama3-70b-instruct',
-      model_params: { max_tokens: 1000 }
-    },
-    templating: {
-      template: [
-        {
-          role: 'user',
-          content: 'Are there commonly used SDKs offered by SAP? List top 3.'
-        }
-      ]
-    }
-  });
-
-  // remove
-  const response = await orchestrationClient.chatCompletion();
-  // TODO: Return the response content.
-  // remove
-  return replaceLineBreakWithBR(response.getContent()!);
+async function orchestrationCompletionSimple(): Promise<any> {
+  // const orchestrationClient = new OrchestrationClient({
+  //   llm: {
+  //     model_name: 'gemini-1.5-flash',
+  //     model_params: { max_tokens: 1000 }
+  //   },
+  //   templating: {
+  //     template: [
+  //       {
+  //         role: 'user',
+  //         content: 'Are there commonly used SDKs offered by SAP? List top 3.'
+  //       }
+  //     ]
+  //   }
+  // });
+  // const response = await orchestrationClient.chatCompletion();
+  // return replaceLineBreakWithBR(response.getContent()!);
 }
 
-async function orchestrationCompletionTemplate(): Promise<string | undefined> {
+async function orchestrationCompletionTemplate(): Promise<any> {
   const orchestrationClient = new OrchestrationClient({
     llm: {
-      model_name: 'gpt-4o',
+      model_name: 'mistralai--mixtral-8x7b-instruct-v01',
       model_params: { max_tokens: 1000 }
     },
     templating: {
-      // TODO: add system message: Please generate contents with HTML tags.
-      // TODO: add user message: Create a job post for the position: {{?position}}.
-      // remove elements
       template: [
         { role: 'system', content: 'Please generate contents with HTML tags.' },
         {
@@ -74,13 +65,9 @@ async function orchestrationCompletionTemplate(): Promise<string | undefined> {
       ]
     }
   });
-
-  // Call the orchestration service.
-  // TODO: add parameters
   const response = await orchestrationClient.chatCompletion({
     inputParams: { position: 'Java dev' }
   });
-  // Access the response content.
   return response.getContent();
 }
 
