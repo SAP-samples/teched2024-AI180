@@ -31,7 +31,7 @@ The code snippet does the following:
   - A configuration for the LLM model name
   - A model option (max_tokens)
   - A user-provided prompt
-2. Calls the Chat Completion Endpoint of the orchestration service.
+2. Calls the chat completion endpoint of the orchestration service.
 3. Returns the response content from the orchestration service.
 
 ### 3. Restart the Application
