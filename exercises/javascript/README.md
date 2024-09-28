@@ -19,7 +19,7 @@ The [project](app) used for this session is an [Express](https://www.npmjs.com/p
 
 ### 2.1 Dependencies
 The necessary dependencies for the exercises are specified in the [package.json](app/package.json). 
-The SAP Cloud SDK for AI uses the scope `@sap-ai-sdk`, e.g., `@sap-ai-sdk/orchestration`, for npm packages.
+The SAP Cloud SDK for AI uses the scope [@sap-ai-sdk](https://www.npmjs.com/search?q=%40sap-ai-sdk), e.g., [@sap-ai-sdk/orchestration](https://www.npmjs.com/package/@sap-ai-sdk/orchestration), for npm packages.
 
 ### 2.2 Related Source Code
 The [server.ts](app/src/server.ts) file defines the application, including the startup process, the list of exposed endpoints, and their implementation.
