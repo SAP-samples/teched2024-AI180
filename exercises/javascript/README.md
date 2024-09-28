@@ -10,7 +10,9 @@ TODO: check unused dependencies.
 ```
 AICORE_SERVICE_KEY='{"clientid": "<demo-credentials-file.js.clientid>","clientsecret": "<demo-credentials-file.js.clientsecret>","url": "<demo-credentials-file.js.url>","serviceurls": {"AI_API_URL": "<demo-credentials-file.js.serviceurls.AI_API_URL>"}}'
 ```
-3. Install Node 20.
+3. It is highly recommended to use an IDE like [VS Code](https://code.visualstudio.com) or [WebStorm](https://www.jetbrains.com/webstorm/).
+Open the project that you cloned from the previous [step](../../README.md#how-to-start).
+4. Install Node 20.
 
 ## 2. Project Structure
 The [project](app) used for this session is an [Express](https://www.npmjs.com/package/express)-based web application.
