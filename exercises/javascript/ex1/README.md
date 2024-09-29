@@ -63,8 +63,8 @@ Repeat the [step 3](#3-restart-the-application) and [step 4](#4-check-the-llm-re
 
 **Great job!**
 
-- You have successfully used the SAP Cloud SDK for AI for sending a user-provided prompt.
-- In addition, you have tested the [harmonized LLM access feature](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/harmonized-api?locale=en-US) of the orchestration service, by switched the model name.
+- You have successfully used the SAP Cloud SDK for AI to send a user-provided prompt.
+- Additionally, you tested the [harmonized LLM access feature](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/harmonized-api?locale=en-US) of the orchestration service by switching the model name seamlessly.
 
 You’re now ready to move on to the next step.
 Continue to the [Exercise 2 - Prompt Templating](../ex2/README.md)
