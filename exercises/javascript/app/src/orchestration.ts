@@ -51,12 +51,12 @@ async function orchestrationCompletionSimple(): Promise<any> {
 async function orchestrationCompletionTemplate(): Promise<any> {
   const orchestrationClient = new OrchestrationClient({
     llm: {
-      model_name: 'meta--llama3-70b-instruct',
+      model_name: 'gemini-1.5-flash',
       model_params: { max_tokens: 1000 }
     },
     templating: {
       template: [
-        { role: 'system', content: 'You are a helpful assistant.' },
+        { role: 'system', content: 'Please generate contents with HTML tags.' },
         {
           role: 'user',
           content: 'Create a job post for the position: {{?position}}.'
