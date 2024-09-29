@@ -44,7 +44,9 @@ async function orchestrationCompletionSimple(): Promise<any> {
       ]
     }
   });
+
   const response = await orchestrationClient.chatCompletion();
+
   return replaceLineBreakWithBR(response.getContent()!);
 }
 
@@ -64,9 +66,11 @@ async function orchestrationCompletionTemplate(): Promise<any> {
       ]
     }
   });
+
   const response = await orchestrationClient.chatCompletion({
     inputParams: { position: 'Java dev' }
   });
+
   return response.getContent();
 }
 

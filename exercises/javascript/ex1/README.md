@@ -23,7 +23,9 @@ const orchestrationClient = new OrchestrationClient({
         ]
     }
 });
+
 const response = await orchestrationClient.chatCompletion();
+
 return replaceLineBreakWithBR(response.getContent()!);
 ```
 > [!NOTE]

@@ -25,9 +25,11 @@ const orchestrationClient = new OrchestrationClient({
         ]
     }
 });
+
 const response = await orchestrationClient.chatCompletion({
     inputParams: { position: 'Java dev' }
 });
+
 return response.getContent();
 ```
 
