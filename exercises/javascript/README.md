@@ -36,12 +36,13 @@ You will mainly work with this file during your exercises.
 > This approach will allow you to experience the full developer workflow, including useful features like auto-completion and debugging. 
 > By typing the code, you’ll better understand the logic, discover useful functions, and build muscle memory, all of which contribute to a deeper learning experience.
 
-### Exercises TODO
+### Exercises
 
 The exercises are comprised of notebooks demonstrating how to use the SAP generative AI hub SDK to interact with the Orchestration Service, enabling you to build AI-driven workflows by combining multiple modules such as templating, large language models (LLM), and content filtering.
 
 - [Preparation](ex0/README.md)
 - [Exercise 1 - Getting LLM Access via Orchestration Service](ex1/README.md)
-- [Exercise 3 - Orchestration Chatbot](./ex3.ipynb)
+- [Exercise 2 - Prompt Templating](ex2/README.md)
+- [Exercise 3 - Content Filtering](ex3/README.md)
 
 Start from [here](./ex0/README.md).
