@@ -1,7 +1,7 @@
 # Exercise 1 - Getting LLM Access via Orchestration Service
 
-In this exercise, you will learn how to send a simple prompt using the SAP Cloud SDK for AI. 
-You’ll also explore the [server-side harmonization feature](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/harmonized-api?locale=en-US) of the orchestration service.
+In this exercise, you will learn how to send a user-provided prompt using the SAP Cloud SDK for AI. 
+You’ll also explore the [harmonized LLM access feature](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/harmonized-api?locale=en-US) of the orchestration service.
 
 ### 1. Navigate to the Function
 Open [orchestration.ts](../app/src/orchestration.ts) file and search for the function `orchestrationCompletionSimple`.
@@ -40,7 +40,13 @@ Save your changes and wait for the application to automatically restart.
 ### 4. Check the LLM Response
 Open your browser and visit http://localhost:8080/orchestration/simple. You should see the response from the LLM.
 
-### 5. Use Server-Side Harmonization
+> [!TIP]
+> You should see the following log messages, as the service key from the [.env](../app/.env) file is in use.
+> ```
+> INFO     (context): Found a service key in environment variable "AICORE_SERVICE_KEY". Using a service key is recommended for local testing only. Bind the AI Core service to the application for productive usage.
+> ```
+
+### 5. Use Harmonized LLM Access
 Modify the code as shown below to switch to a different LLM model while keeping the same configuration and prompt:
 ```javascript
     llm: {
@@ -53,13 +59,13 @@ Modify the code as shown below to switch to a different LLM model while keeping 
 ### 6. Check the LLM Response
 Repeat the [step 3](#3-restart-the-application) and [step 4](#4-check-the-llm-response) to see the updated response from the new LLM model.
 
-
-### Troubleshooting TODO
-env check
-
 ## Summary TODO
 
-You've now ...
+**Great job!**
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+- You have successfully used the SAP Cloud SDK for AI for sending a user-provided prompt.
+- In addition, you have tested the [harmonized LLM access feature](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/harmonized-api?locale=en-US) of the orchestration service, by switched the model name.
+
+You’re now ready to move on to the next step.
+Continue to the [Exercise 2 - Prompt Templating](../ex2/README.md)
 

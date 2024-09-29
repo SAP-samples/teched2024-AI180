@@ -31,22 +31,22 @@ export async function orchestrationCompletion(
 */
 
 async function orchestrationCompletionSimple(): Promise<any> {
-  // const orchestrationClient = new OrchestrationClient({
-  //   llm: {
-  //     model_name: 'meta--llama3-70b-instruct',
-  //     model_params: { max_tokens: 1000 }
-  //   },
-  //   templating: {
-  //     template: [
-  //       {
-  //         role: 'user',
-  //         content: 'What is SAP TechEd?'
-  //       }
-  //     ]
-  //   }
-  // });
-  // const response = await orchestrationClient.chatCompletion();
-  // return replaceLineBreakWithBR(response.getContent()!);
+  const orchestrationClient = new OrchestrationClient({
+    llm: {
+      model_name: 'meta--llama3-70b-instruct',
+      model_params: { max_tokens: 1000 }
+    },
+    templating: {
+      template: [
+        {
+          role: 'user',
+          content: 'What is SAP TechEd?'
+        }
+      ]
+    }
+  });
+  const response = await orchestrationClient.chatCompletion();
+  return replaceLineBreakWithBR(response.getContent()!);
 }
 
 async function orchestrationCompletionTemplate(): Promise<any> {

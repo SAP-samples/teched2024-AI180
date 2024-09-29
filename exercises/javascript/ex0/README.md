@@ -55,6 +55,9 @@ lsof -i :8080
 ```
 
 ## Summary 
-**Great job! Your Express-based application is up and running.**
+**Congratulations!**
 
-You’re now ready to move on to the next step. Continue to the [Exercise 1 - Getting LLM Access via Orchestration Service](../ex1/README.md).
+Your Express-based application is up and running.
+
+You’re now ready to move on to the next step. 
+Continue to the [Exercise 1 - Getting LLM Access via Orchestration Service](../ex1/README.md).

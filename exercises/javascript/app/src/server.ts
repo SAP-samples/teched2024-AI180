@@ -2,7 +2,7 @@
 import express from 'express';
 import { orchestrationCompletion } from './orchestration.js';
 import 'dotenv/config.js';
-console.log(process.env.AICORE_SERVICE_KEY);
+console.log(`Service key: ${process.env.AICORE_SERVICE_KEY}`);
 
 const app = express();
 const port = 8080;
