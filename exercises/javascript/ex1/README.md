@@ -39,7 +39,8 @@ return replaceLineBreakWithBR(response.getContent()!);
 Save your changes and wait for the application to automatically restart.
 
 ### 4. Check the LLM Response
-Open your browser and visit http://localhost:8080/orchestration/simple. You should see the response from the LLM.
+Open your browser and visit http://localhost:8080/orchestration/simple. 
+You should see the response from the LLM.
 
 > [!TIP]
 > You should see the following log messages, as the service key from the [.env](../app/.env) file is in use.
@@ -60,7 +61,7 @@ Modify the code as shown below to switch to a different LLM model while keeping 
 ### 6. Check the LLM Response
 Repeat the [step 3](#3-restart-the-application) and [step 4](#4-check-the-llm-response) to see the updated response from the new LLM model.
 
-## Summary TODO
+## Summary
 
 **Great job!**
 

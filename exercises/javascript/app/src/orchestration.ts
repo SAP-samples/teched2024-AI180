@@ -52,7 +52,7 @@ async function orchestrationCompletionTemplate(): Promise<any> {
   const orchestrationClient = new OrchestrationClient({
     llm: {
       model_name: 'gemini-1.5-flash',
-      model_params: { max_tokens: 1000 }
+      model_params: { max_tokens: 1000, temperature: 0.1 }
     },
     templating: {
       template: [
