@@ -21,9 +21,9 @@ The necessary dependencies for the exercises are specified in the [package.json]
 The SAP Cloud SDK for AI uses the scope [@sap-ai-sdk](https://www.npmjs.com/search?q=%40sap-ai-sdk), e.g., [@sap-ai-sdk/orchestration](https://www.npmjs.com/package/@sap-ai-sdk/orchestration), for npm packages.
 
 ### 2.2 Related Source Code
-The [server.ts](app/src/server.ts) file defines the application, including the startup process, the list of exposed endpoints, and their implementation.
+- The [server.ts](app/src/server.ts) file defines the application, including the startup process, the list of exposed endpoints, and their implementation.
 
-The [orchestration.ts](app/src/orchestration.ts) file contains implementation details for calling the orchestration service using the client libraries provided by the SAP Cloud SDK.
+- The [orchestration.ts](app/src/orchestration.ts) file contains implementation details for calling the orchestration service using the client libraries provided by the SAP Cloud SDK.
 You will mainly work with this file during your exercises.
 
 > [!NOTE]
@@ -37,7 +37,7 @@ You will mainly work with this file during your exercises.
 
 ### Exercises
 
-The exercises are comprised of notebooks demonstrating how to use the SAP generative AI hub SDK to interact with the Orchestration Service, enabling you to build AI-driven workflows by combining multiple modules such as templating, large language models (LLM), and content filtering.
+The exercises demonstrate how to use the SAP generative AI hub SDK to interact with the [orchestration service](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/orchestration?locale=en-US), enabling you to build AI-driven workflows by combining multiple modules such as templating, large language models (LLM), and content filtering.
 
 - [Preparation](ex0/README.md)
 - [Exercise 1 - Getting LLM Access via Orchestration Service](ex1/README.md)

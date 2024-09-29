@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2024 session called "AI180 - Build your own Generative AI Scenario in a Snap".
+This repository contains the material for the SAP TechEd 2024 session called "AI180 - Build your own generative AI scenario for your use case".
 
 ## Overview
 
@@ -30,8 +30,7 @@ By the end of this session, attendees will have gained practical experience in l
 > 1. **System Duration**: The test system will be disabled at 17:00 CEST on Wed, Oct 16.
 > 1. **Token and Rate Limits**: Each LLM has an input and output token limit of 1000, and a global rate limit applies per minute.
 > 1. **Testing Purposes Only**: The test system is intended solely for testing purposes and not for any productive or commercial use.
-> 1. The test system is offered for testing purposes, instead of any productive usage.
-> 2. **Malicious Usage**: Any detection of malicious usage will result in immediate termination of your test system. Depending on the severity of the abuse, legal action may be pursued. An example of malicious behavior includes repeatedly hitting the rate limit every minute, for more than 8 hours a day.
+> 1. **Malicious Usage**: Any detection of malicious usage will result in immediate termination of your test system. Depending on the severity of the abuse, legal action may be pursued. An example of malicious behavior includes repeatedly hitting the rate limit every minute, for more than 8 hours a day.
 > 1. **Available Models**: We currently offer two models for testing: `gemini-1.5-flash` and `meta-llama3-70b-instruct`.
 
 ## How to Start
@@ -47,11 +46,12 @@ git clone https://github.com/SAP-samples/teched2024-AI180.git
 
 ### Template for Requesting the Test System
 ```
-Email Subject: [TechEd 2024 AI180] Request: Access to Test System
+Email Subject: 
+[TechEd 2024 AI180] Request: Access to Test System
 
 Email Body:
 - Name: <Your-Name>
-- Company: <Your-Company>
+- Company: <Your-Company-Name>
 - Business Email Address: <Your-Business-Email-Address>
 ```
 
