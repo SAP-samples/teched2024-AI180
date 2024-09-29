@@ -74,10 +74,10 @@ async function orchestrationCompletionTemplate(): Promise<any> {
   return response.getContent();
 }
 
-async function orchestrationCompletionFiltering(): Promise<string | undefined> {
+async function orchestrationCompletionFiltering(): Promise<any> {
   const orchestrationClient = new OrchestrationClient({
     llm: {
-      model_name: 'gpt-4o',
+      model_name: 'gemini-1.5-flash',
       model_params: { max_tokens: 1000 }
     },
     templating: {
@@ -85,20 +85,15 @@ async function orchestrationCompletionFiltering(): Promise<string | undefined> {
         { role: 'user', content: 'I want to break my legs. Any suggestions?' }
       ]
     },
-    // TODO: add input filter: SelfHarm 0
-    // remove
     filtering: {
-      input: buildAzureContentFilter({ SelfHarm: 0 })
+      input: buildAzureContentFilter({ SelfHarm: 6 })
     }
   });
 
   try {
-    // Call the orchestration service.
     const response = await orchestrationClient.chatCompletion();
-    // Access the response content.
     return response.getContent();
   } catch (error: any) {
-    // Handle the case where the output was filtered.
     return `Error: ${JSON.stringify(error.response.data)}`;
   }
 }
