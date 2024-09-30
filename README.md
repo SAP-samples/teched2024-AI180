@@ -2,36 +2,37 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2024 session called "AI180 - Build your own generative AI scenario for your use case".
+This repository contains the material for the SAP TechEd 2024 session ["AI180 - Build your own generative AI scenario for your use case"](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722557682293001fTqe).
 
 ## Overview
 
-This session introduces attendees to integrating orchestration capabilities of Generative AI Hub into their own scenarios using SAP Cloud SDK for AI (JavaScript) or SAP generative AI hub SDK (Python).
+This session introduces you to integrating orchestration capabilities of Generative AI Hub, SAP AI Core, into your own scenarios using SAP Cloud SDK for AI (JavaScript) or SAP generative AI hub SDK (Python).
 Accordingly, this session offers two parallel tracks:
 
 - [SAP Cloud SDK for AI (JavaScript)](exercises/javascript/README.md)
 - [SAP generative AI hub SDK (Python)](exercises/python/README.md)
 
-Both tracks cover identical core concepts and practical applications, differing only in the programming language and SDK utilized. Participants can choose the track that best aligns with their expertise or opt to experience both to broaden their understanding.
+Both tracks cover identical core concepts and practical applications, differing only in the programming language and SDK utilized. You may choose the track that best aligns with your expertise or technology stack. You may also opt to experience both tracks to broaden your understanding.
 
-By the end of this session, attendees will have gained practical experience in leveraging these powerful SDKs to enhance their AI-driven solutions, regardless of their chosen programming environment. Join us to unlock the full potential of Generative AI in your projects and stay at the forefront of AI integration.
+By the end of this session, you will have gained practical experience in leveraging these powerful SDKs to enhance your AI-driven solutions, regardless of your chosen programming environment. Join the session to unlock the full potential of Generative AI in your projects and stay at the forefront of AI integration.
 
 > [!IMPORTANT]  
-> - As part of this **Jump Start** session, we are offering free access to a limited number of test systems.
-> - To receive your test system, you must follow the outlined process for submitting a request.
+> - As part of this **Jump Start** session, we are offering free access to limited number of hands-on test systems, for limited duration.
+> - To receive your test system, you must follow the below outlined process for submitting a request.
 
 > [!WARNING]
 > ## Disclaimer
 > 
-> By applying for access to the test systems, you agree to the following terms:
+> While requesting for access to hands-on test systems, note the following terms:
 > 1. **Single Request Policy**: Please submit only one request per individual. Submitting requests on behalf of others is strictly **prohibited**.
-> 1. **Limited Availability**: Access to the test system is limited to the first **100** participants. If you are not selected, you may not receive a test system.
+> 1. **Limited Availability**: Access to the test system is limited to the first **100** applications only. If you are not among the first 100 applicants, you may not receive a test system.
 > 1. **Email Notification**: If approved, you will receive system access details via email within **24 hours**.
 > 1. **System Duration**: The test system will be disabled at 17:00 CEST on Wed, Oct 16.
-> 1. **Token and Rate Limits**: Each LLM has an input and output token limit of 1000, and a global rate limit applies per minute.
-> 1. **Testing Purposes Only**: The test system is intended solely for testing purposes and not for any productive or commercial use.
-> 1. **Malicious Usage**: Any detection of malicious usage will result in immediate termination of your test system. Depending on the severity of the abuse, legal action may be pursued. An example of malicious behavior includes repeatedly hitting the rate limit every minute, for more than 8 hours a day.
-> 1. **Available Models**: We currently offer two models for testing: `gemini-1.5-flash` and `meta-llama3-70b-instruct`.
+> 1. **Token and Rate Limits**: Each large language model (LLM) used in the exercises has an input and output token limit of 1000 each. In addition, there is a global rate limit per minute for number of requests made.
+> 1. **Testing/Learning Purposes Only**: The test system is intended solely for testing or learning purposes and **not for any productive or commercial use**.
+> 1. **Malicious Usage**: Any detection of malicious usage will result in immediate termination of your test system access. Depending on the severity of the abuse, legal action may be pursued. An example of malicious behavior includes repeatedly hitting the rate limit every minute, for more than 8 hours a day.
+> 1. **Available Models**: We currently offer two large language models for testing: `gemini-1.5-flash` and `meta-llama3-70b-instruct`.
+> 1. **Feature Changes**: Do not make any business decisions on the contents of this exercise. SAP reserves the right to change or deprecate any feature of the Orchestration Service in future, without any prior notifiation.
 
 ## How to Start
 1. **Apply for the Test Systems**:
