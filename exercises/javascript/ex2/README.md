@@ -41,7 +41,7 @@ return response.getContent();
 > - When calling the chat completion endpoint, you’ll pass an input parameter to provide the value of the position variable.
 
 ### 3. Restart the Application
-Save your changes and wait for the application to automatically restart.
+Save your changes and wait for the application to restart automatically.
 
 ### 4. Check the LLM Response
 Open your browser and visit http://localhost:8080/orchestration/template. 
