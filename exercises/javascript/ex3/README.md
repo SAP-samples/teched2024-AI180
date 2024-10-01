@@ -36,7 +36,7 @@ try {
 > We added an input filter using the convenient method `buildAzureContentFilter` to block content based on a predefined sensitivity level.
 
 ### 3. Restart the Application
-Save your changes and wait for the application to automatically restart.
+Save your changes and wait for the application to restart automatically.
 
 ### 4. Check the LLM Response
 Open your browser and visit http://localhost:8080/orchestration/filtering. 
@@ -58,7 +58,7 @@ To make the filter less strict, modify the code as shown below:
     }
 ```
 ### 6. Check the LLM Response
-Repeat the [step 3](#3-restart-the-application) and [step 4](#4-check-the-llm-response) to see the updated response from the orchestration service.
+Repeat [step 3](#3-restart-the-application) and [step 4](#4-check-the-llm-response) to see the updated response from the orchestration service.
 
 > [!TIP]
 > With the updated threshold, the input (user-provided prompt) should not be filtered before sending to the LLM.
