@@ -22,19 +22,14 @@ export async function orchestrationCompletion(
       return undefined;
   }
 }
-/*
-  gemini-1.5-flash
-  meta--llama3-70b-instruct
-  mistralai--mixtral-8x7b-instruct-v01
-*/
 
 async function orchestrationCompletionSimple(): Promise<string | undefined> {
-  // TODO: init orchestration client
+  // TODO: init orchestration client: gpt-4o
   // TODO: add user message: Are there commonly used SDKs offered by SAP? List top 3.
   // remove
   const orchestrationClient = new OrchestrationClient({
     llm: {
-      model_name: 'meta--llama3-70b-instruct',
+      model_name: 'gpt-4o',
       model_params: { max_tokens: 1000 }
     },
     templating: {

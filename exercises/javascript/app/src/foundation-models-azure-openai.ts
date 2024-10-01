@@ -11,7 +11,7 @@ export async function chatCompletion(): Promise<string> {
       {
         role: 'user',
         content:
-          'List a football team, made by 11 best legend players with national flags emoji.'
+          'Show me a football team, made by 11 legend players with national flags emoji.'
       }
     ],
     temperature: 0.1
