@@ -43,9 +43,7 @@ app.get('/embedding', async (req, res) => {
     if (!result?.length) {
       res.status(500).send('No embedding vector returned.');
     } else {
-      res.send(
-        res.send(`Number crunching success, got a nice vector: ${result[0]}...`)
-      );
+      res.send(`Number crunching success, got a nice vector: ${result[0]}...`);
     }
   } catch (error: any) {
     console.error(error);
