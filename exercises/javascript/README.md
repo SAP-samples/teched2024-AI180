@@ -30,7 +30,7 @@ You will mainly work with this file during your exercises.
 > Most endpoints will not return meaningful responses until the exercises are completed.
 
 > [!TIP]
-> The solutions to the exercises are provided but commented out. 
+> The solutions to the exercises are provided but have been commented out. 
 > We strongly recommend that you attempt to solve the exercises by writing the code yourself instead of just uncommenting or copying the solution. 
 > This approach will allow you to experience the full developer workflow, including useful features like auto-completion and debugging. 
 > By typing the code, you’ll better understand the logic, discover useful functions, and build muscle memory, all of which contribute to a deeper learning experience.
