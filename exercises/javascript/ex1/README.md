@@ -38,7 +38,7 @@ return replaceLineBreakWithBR(response.getContent()!);
 > 3. Returns the response content from the orchestration service.
 
 ### 3. Restart the Application
-Save your changes and wait for the application to automatically restart.
+Save your changes and wait for the application to restart automatically.
 
 ### 4. Check the LLM Response
 Open your browser and visit http://localhost:8080/orchestration/simple. 
@@ -61,7 +61,7 @@ Modify the code as shown below to switch to a different LLM model while keeping 
 ```
 
 ### 6. Check the LLM Response
-Repeat the [step 3](#3-restart-the-application) and [step 4](#4-check-the-llm-response) to see the updated response from the new LLM model.
+Repeat [step 3](#3-restart-the-application) and [step 4](#4-check-the-llm-response) to see the updated response from the new LLM model.
 
 ## Summary
 
@@ -71,5 +71,5 @@ Repeat the [step 3](#3-restart-the-application) and [step 4](#4-check-the-llm-re
 - Additionally, you tested the [harmonized LLM access feature](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/harmonized-api?locale=en-US) of the orchestration service by switching the model name seamlessly.
 
 You’re now ready to move on to the next step.
-Continue to the [Exercise 2 - Prompt Templating](../ex2/README.md)
+Continue to [Exercise 2 - Prompt Templating](../ex2/README.md)
 

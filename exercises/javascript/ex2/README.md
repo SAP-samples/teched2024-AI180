@@ -41,7 +41,7 @@ return response.getContent();
 > - When calling the chat completion endpoint, you’ll pass an input parameter to provide the value of the position variable.
 
 ### 3. Restart the Application
-Save your changes and wait for the application to automatically restart.
+Save your changes and wait for the application to restart automatically.
 
 ### 4. Check the LLM Response
 Open your browser and visit http://localhost:8080/orchestration/template. 
@@ -63,4 +63,4 @@ Now, let’s take a closer look at the key concepts you’ve learned so far.
 - **System & User Prompts**: In addition to handling user-provided prompts, you also showcased how to send an instruction through a system prompt, enabling more control over the response behavior.
 
 You’re now ready to move on to the next step.
-Continue to the [Exercise 3 - Content Filtering](../ex3/README.md)
+Continue to [Exercise 3 - Content Filtering](../ex3/README.md)

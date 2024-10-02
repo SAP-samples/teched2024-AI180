@@ -14,7 +14,7 @@ npm -v
 
 ### 1. Navigate to the Application Directory:
 
-Assuming you are still in the root directory of the [teched2024-AI180 repository, navigate to the app folder:
+Assuming you are still in the root directory of the teched2024-AI180 repository, navigate to the app folder:
 ```shell
 cd exercises/javascript/app
 ```
@@ -60,4 +60,4 @@ lsof -i :8080
 Your Express-based application is up and running.
 
 You’re now ready to move on to the next step. 
-Continue to the [Exercise 1 - Getting LLM Access via Orchestration Service](../ex1/README.md).
+Continue to [Exercise 1 - Getting LLM Access via Orchestration Service](../ex1/README.md).
