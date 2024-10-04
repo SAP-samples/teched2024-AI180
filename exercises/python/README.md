@@ -9,7 +9,7 @@ This track introduces attendees to using orchestration capabilities of Generativ
 3. Open up a terminal session at the root of the cloned repository. It is highly suggested to create a virtual Python environment for following along to avoid conflicts with other packages that could be already installed on your system. A virtual environment can be created using `python -m venv ENV`. Note: Your Python executable might also be called `python3`. Activate the environment in your current terminal session using either `source ENV/bin/activate` for Unix like systems (MacOS and Linux) or by running the script `ENV/Scripts/Activate.ps1` for Windows. Make sure that all subsequent steps are executed within the context of this newly created virtual environment.
 4. Install the [SAP generative AI hub SDK](https://pypi.org/project/generative-ai-hub-sdk/) using pip: `pip install "generative-ai-hub-sdk[all]"`.
 
-Is it clear enough to get the credentials from the email
+Is it clear enough to get the credentials from the email ?
    
 5. Configure authentication by setting the following environment variables using the demo credentials. You will find the appropriate values (named accordingly) in the file under the key `python`:
 
