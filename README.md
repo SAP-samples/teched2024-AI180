@@ -1,8 +1,8 @@
-# AI180 - Build your own generative AI scenario for your use case
+# AI180 - Build your own generative AI scenario in a Snap
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2024 session ["AI180 - Build your own generative AI scenario for your use case"](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722557682293001fTqe).
+This repository contains the material for the SAP TechEd 2024 session ["AI180 - Build your own generative AI scenario in a Snap"](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722557682293001fTqe).
 
 ## Overview
 
