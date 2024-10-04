@@ -24,11 +24,12 @@ export async function orchestrationCompletion(
 }
 
 async function orchestrationCompletionSimple(): Promise<string | undefined> {
-  let orchestrationClient;
+  let orchestrationClient: any;
+  // Task 1: minimal example
   // TODO: init orchestration client: gpt-4o
   // TODO: add user message: Are there commonly used SDKs offered by SAP? List top 3.
+  // Task 2: harmonized API
   // TODO: change model to gemini
-  // remove
   orchestrationClient = new OrchestrationClient({
     llm: {
       model_name: 'gpt-4o',
@@ -55,9 +56,6 @@ async function orchestrationCompletionTemplate(): Promise<string | undefined> {
       model_params: { max_tokens: 1000 }
     },
     templating: {
-      // TODO: add system message: Please generate contents with HTML tags.
-      // TODO: add user message: Create a job post for the position: {{?position}}.
-      // remove elements
       template: [
         { role: 'system', content: 'Please generate contents with HTML tags.' },
         {
@@ -67,7 +65,8 @@ async function orchestrationCompletionTemplate(): Promise<string | undefined> {
       ]
     }
   });
-  // TODO: add parameters
+  // Task 3 prompt templates
+  // TODO: add parameters -- position: Java dev
   const response = await orchestrationClient.chatCompletion({
     inputParams: { position: 'Java dev' }
   });
@@ -86,8 +85,8 @@ async function orchestrationCompletionFiltering(): Promise<string | undefined> {
         { role: 'user', content: 'I want to break my legs. Any suggestions?' }
       ]
     },
+    // Task 4: content filter
     // TODO: add input filter: SelfHarm 0
-    // remove
     filtering: {
       input: buildAzureContentFilter({ SelfHarm: 0 })
     }
