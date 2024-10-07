@@ -81,7 +81,7 @@ async function orchestrationCompletionFiltering(): Promise<any> {
   //     ]
   //   },
   //   filtering: {
-  //     input: buildAzureContentFilter({ SelfHarm: 6 })
+  //     input: buildAzureContentFilter({ SelfHarm: 0 })
   //   }
   // });
   //
