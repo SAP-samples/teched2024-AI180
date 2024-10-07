@@ -21,6 +21,11 @@ This track introduces attendees to using orchestration capabilities of Generativ
 
 6. You can now open your preferred development environment for Python and start with the exercises. Ensure that the created virtual environment and the set environment variables are used within your development environment.
 
+> [!TIP]
+> We recommend using Jupyter Notebook to explore this tracks exercises.
+> You can install it within your virtual environment using `pip install notebook`.
+> Afterwards you can use the following command from your repositories root to view and edit the Jupyter Notebooks provided in this track: `jupyter notebook exercises/python/`.
+
 ### Exercises
 
 The exercises are comprised of notebooks demonstrating how to use the SAP generative AI hub SDK to interact with the Orchestration Service, enabling you to build AI-driven workflows by combining multiple modules such as templating, large language models (LLM), and content filtering.
