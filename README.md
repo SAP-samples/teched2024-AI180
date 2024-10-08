@@ -38,11 +38,11 @@ By the end of this session, you will have gained practical experience in leverag
 > Based on the number of hands-on testing requests and system usage, we may be able to grant access to additional applicants and extend the testing duration. In such cases, we will update this README accordingly, and early applicants on the waiting list will receive access details via email.
 
 > [!NOTE]
-> If you have your own AI core instances for consuming Generative AI Hub capabilities, you should be able to follow this tutorial with your own AI core instances, as well.
-> Please adjust the following:
-> - You need to create a deployment for orchestration by checking the [documentation](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/create-deployment-for-orchestration?locale=en-US).
-> - You will be asked to provide the system infomration soon, before the actual exercises. Instead of using the hands-on test system you requested, you should use the information from your own AI core instances, e.g., AI core client id, secret and auth URL.
-> - When running your application on BTP instead of locally, the SDKs will also find the AI core instance information from the VCAP_SERVICES environment variable automatically. 
+> If you have your own AI Core instances for consuming Generative AI Hub capabilities, you can follow this tutorial using those instances.
+> Please make the following adjustments:
+> - You need to create a deployment for orchestration by referring the [documentation](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/create-deployment-for-orchestration?locale=en-US).
+> - Before beginning the exercises, you’ll need to provide system information. Instead of using the hands-on test system provided for this tutorial, use your own AI Core instance details, such as the AI Core client ID, secret, and authentication URL.
+> - If you’re running your application on BTP rather than locally, the SDKs will automatically retrieve your AI Core instance information from the VCAP_SERVICES environment variable. 
 
 ## How to Start
 1. **Apply for the Test Systems**:
