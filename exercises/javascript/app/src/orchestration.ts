@@ -30,7 +30,8 @@ async function orchestrationCompletionSimple(): Promise<string | undefined> {
   // TODO: add user message:
   //  Are there commonly used SDKs offered by SAP? List top 3, developed under public GitHub.
   // Task 2: harmonized API
-  // TODO: change model to gemini
+  // TODO: switch to a gemini model
+  // REMOVE
   orchestrationClient = new OrchestrationClient({
     llm: {
       model_name: 'gpt-4o',
@@ -86,6 +87,7 @@ async function orchestrationCompletionFiltering(): Promise<string | undefined> {
     },
     // Task 3: content filter
     // TODO: add input filter: SelfHarm 0
+    // REMOVE
     filtering: {
       input: buildAzureContentFilter({ SelfHarm: 0 })
     }
