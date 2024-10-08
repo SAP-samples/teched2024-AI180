@@ -24,7 +24,7 @@ This track introduces attendees to using orchestration capabilities of Generativ
 > [!TIP]
 > We recommend using Jupyter Notebook to explore this tracks exercises.
 > You can install it within your virtual environment using `pip install notebook`.
-> Afterwards you can use the following command from your repositories root to view and edit the Jupyter Notebooks provided in this track: `jupyter notebook exercises/python/`.
+> Afterwards you can use the following command from your repositories root to view and edit the Jupyter Notebooks provided in this track: `jupyter notebook exercises/python/`. A browser window should open up automatically.
 
 ### Exercises
 
