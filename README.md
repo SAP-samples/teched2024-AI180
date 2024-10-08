@@ -34,6 +34,9 @@ By the end of this session, you will have gained practical experience in leverag
 > 1. **Available Models**: We currently offer two large language models for testing: `gemini-1.5-flash` and `meta-llama3-70b-instruct`.
 > 1. **Feature Changes**: Do not make any business decisions on the contents of this exercise. SAP reserves the right to change or deprecate any feature of the Orchestration Service in future, without any prior notifiation.
 
+> [!TIP]
+> Based on the number of hands-on testing requests and system usage, we may be able to grant access to additional applicants and extend the testing duration. In such cases, we will update this README accordingly, and early applicants on the waiting list will receive access details via email.
+
 ## How to Start
 1. **Apply for the Test Systems**:
     - Use this [template](#template-for-requesting-the-test-system), fill in your information and send it to `teched.2024.ai180.registration.bot@sap.com`.
