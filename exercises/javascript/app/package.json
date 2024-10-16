@@ -23,10 +23,10 @@
     "lint:fix": "eslint . --fix && prettier . --config ./.prettierrc --ignore-path ./.prettierignore -w --log-level error"
   },
   "dependencies": {
-    "@sap-ai-sdk/ai-api": "1.0.0",
-    "@sap-ai-sdk/foundation-models": "1.0.0",
-    "@sap-ai-sdk/orchestration": "1.0.0",
-    "@sap-ai-sdk/langchain": "1.0.0",
+    "@sap-ai-sdk/ai-api": "1.1.0",
+    "@sap-ai-sdk/foundation-models": "1.1.0",
+    "@sap-ai-sdk/orchestration": "1.1.0",
+    "@sap-ai-sdk/langchain": "1.1.0",
     "@langchain/core": "0.3.3",
     "express": "4.21.0",
     "dotenv": "16.4.5"

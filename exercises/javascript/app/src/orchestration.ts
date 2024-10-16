@@ -18,21 +18,15 @@ export async function orchestrationCompletion(
       return orchestrationCompletionTemplate();
     case 'filtering':
       return orchestrationCompletionFiltering();
+    case 'masking':
+      return orchestrationMasking();
     default:
       return undefined;
   }
 }
 
 async function orchestrationCompletionSimple(): Promise<string | undefined> {
-  let orchestrationClient: any;
-  // Task 1: minimal example
-  // TODO: init orchestration client: gpt-4o
-  // TODO: add user message:
-  //  Are there commonly used SDKs offered by SAP? List top 3, developed under public GitHub.
-  // Task 2: harmonized API
-  // TODO: switch to a gemini model
-  // REMOVE
-  orchestrationClient = new OrchestrationClient({
+  const orchestrationClient = new OrchestrationClient({
     llm: {
       model_name: 'gpt-4o',
       model_params: { max_tokens: 1000 }
@@ -41,7 +35,8 @@ async function orchestrationCompletionSimple(): Promise<string | undefined> {
       template: [
         {
           role: 'user',
-          content: 'Are there commonly used SDKs offered by SAP? List top 3, developed under public GitHub.'
+          content:
+            'Are there commonly used SDKs offered by SAP? List top 3, developed under public GitHub.'
         }
       ]
     }
@@ -85,9 +80,6 @@ async function orchestrationCompletionFiltering(): Promise<string | undefined> {
         { role: 'user', content: 'I want to break my legs. Any suggestions?' }
       ]
     },
-    // Task 3: content filter
-    // TODO: add input filter: SelfHarm 0
-    // REMOVE
     filtering: {
       input: buildAzureContentFilter({ SelfHarm: 0 })
     }
@@ -99,4 +91,63 @@ async function orchestrationCompletionFiltering(): Promise<string | undefined> {
   } catch (error: any) {
     return `Error: ${JSON.stringify(error.response.data)}`;
   }
+}
+
+async function orchestrationMasking(): Promise<string | undefined> {
+  const orchestrationClient = new OrchestrationClient({
+    llm: {
+      model_name: 'gpt-4o',
+      model_params: { max_tokens: 1000 }
+    },
+    templating: {
+      template: [
+        {
+          role: 'system',
+          content: 'Generate a HTML page please.'
+        },
+        {
+          role: 'user',
+          content: 'Please read the CV: {{?cv}} and generate a summary.'
+        }
+      ]
+    },
+    masking: {
+      masking_providers: [
+        {
+          type: 'sap_data_privacy_integration',
+          method: 'anonymization',
+          entities: [
+            {
+              type: 'profile-email'
+            },
+            {
+              type: 'profile-person'
+            },
+            {
+              type: 'profile-address'
+            },
+            {
+              type: 'profile-gender'
+            },
+            {
+              type: 'profile-nationality'
+            },
+            {
+              type: 'profile-phone'
+            }
+          ]
+        }
+      ]
+    }
+  });
+
+  const response = await orchestrationClient.chatCompletion({
+    inputParams: {
+      // cv: JSON.stringify(CV)
+      // cv: JSON.stringify(CV).replaceAll('"', ' ')
+      cv: 'my name is Thomas and my phone number is 030-1234-5678'
+    }
+  });
+  // console.log(JSON.stringify(response.rawResponse.data.module_results.input_masking));
+  return response.getContent();
 }
