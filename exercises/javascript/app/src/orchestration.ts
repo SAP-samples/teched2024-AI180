@@ -3,6 +3,7 @@ import {
   buildAzureContentFilter
 } from '@sap-ai-sdk/orchestration';
 import { replaceLineBreakWithBR } from './util.js';
+import { ticket } from "./ticket.js";
 /**
  * Create different types of orchestration requests.
  * @param sampleCase - Name of the sample case to orchestrate.
@@ -26,7 +27,15 @@ export async function orchestrationCompletion(
 }
 
 async function orchestrationCompletionSimple(): Promise<string | undefined> {
-  const orchestrationClient = new OrchestrationClient({
+  let orchestrationClient: any;
+  // Task 1: minimal example
+  // TODO: init orchestration client: gpt-4o
+  // TODO: add user message:
+  //  Are there commonly used SDKs offered by SAP? List top 3, developed under public GitHub.
+  // Task 2: harmonized API
+  // TODO: switch to a gemini model
+  // REMOVE
+  orchestrationClient = new OrchestrationClient({
     llm: {
       model_name: 'gpt-4o',
       model_params: { max_tokens: 1000 }
@@ -54,7 +63,7 @@ async function orchestrationCompletionTemplate(): Promise<string | undefined> {
     },
     templating: {
       template: [
-        { role: 'system', content: 'Please generate contents with HTML tags.' },
+        { role: 'system', content: 'Please generate contents with HTML tags and emojis.' },
         {
           role: 'user',
           content: 'Create a job post for the position: {{?position}}.'
@@ -80,6 +89,9 @@ async function orchestrationCompletionFiltering(): Promise<string | undefined> {
         { role: 'user', content: 'I want to break my legs. Any suggestions?' }
       ]
     },
+    // Task 3: content filter
+    // TODO: add input filter: SelfHarm 0
+    // REMOVE
     filtering: {
       input: buildAzureContentFilter({ SelfHarm: 0 })
     }
@@ -103,14 +115,17 @@ async function orchestrationMasking(): Promise<string | undefined> {
       template: [
         {
           role: 'system',
-          content: 'Generate a HTML page please.'
+          content: 'Please scan the message and list all the masked info first.'
         },
         {
           role: 'user',
-          content: 'Please read the CV: {{?cv}} and generate a summary.'
+          content: 'Please read the message: {{?ticket}} and generate a summary.'
         }
       ]
     },
+    // Task 4: data masking
+    // TODO: anonymization: person, address, phone
+    // REMOVE
     masking: {
       masking_providers: [
         {
@@ -118,19 +133,10 @@ async function orchestrationMasking(): Promise<string | undefined> {
           method: 'anonymization',
           entities: [
             {
-              type: 'profile-email'
-            },
-            {
               type: 'profile-person'
             },
             {
               type: 'profile-address'
-            },
-            {
-              type: 'profile-gender'
-            },
-            {
-              type: 'profile-nationality'
             },
             {
               type: 'profile-phone'
@@ -143,11 +149,9 @@ async function orchestrationMasking(): Promise<string | undefined> {
 
   const response = await orchestrationClient.chatCompletion({
     inputParams: {
-      // cv: JSON.stringify(CV)
-      // cv: JSON.stringify(CV).replaceAll('"', ' ')
-      cv: 'my name is Thomas and my phone number is 030-1234-5678'
+      ticket
     }
   });
-  // console.log(JSON.stringify(response.rawResponse.data.module_results.input_masking));
-  return response.getContent();
+  console.log(JSON.stringify(response.rawResponse.data.module_results.input_masking));
+  return replaceLineBreakWithBR(response.getContent()!);
 }
