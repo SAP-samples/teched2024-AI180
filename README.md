@@ -27,7 +27,7 @@ By the end of this session, you will have gained practical experience in leverag
 > 1. **Single Request Policy**: Please submit only one request per individual. Submitting requests on behalf of others is strictly **prohibited**.
 > 1. **Limited Availability**: Access to the test system is limited to the first **100** applications only. Requests submitted before the start of our session, AI180, will not be considered to ensure fairness. If you are not among the first 100 applicants, you may not receive a test system.
 > 1. **Email Notification**: If approved, you will receive system access details via email within **24 hours**.
-> 1. **System Duration**: The test system will be disabled at 17:00 CEST on Wed, Oct 16.
+> 1. **System Duration**: The test system will be disabled at 17:00 CEST on Wed, ~Oct 16~ Oct 23 (updated).
 > 1. **Token and Rate Limits**: Each large language model (LLM) used in the exercises has a fixed input and output token limit (smaller than the limit available in production scenarios). In addition, there is a global rate limit per minute for number of requests made.
 > 1. **Testing/Learning Purposes Only**: The test system is intended solely for testing or learning purposes and **not for any productive or commercial use**.
 > 1. **Malicious Usage**: Any detection of malicious usage will result in immediate termination of your test system access. Depending on the severity of the abuse, legal action may be pursued. An example of malicious behavior includes repeatedly hitting the rate limit every minute, for more than 8 hours a day.
