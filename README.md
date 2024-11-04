@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2024-AI180)](https://api.reuse.software/info/github.com/SAP-samples/teched2024-AI180)
+
 # AI180 - Build your own generative AI scenario in a Snap
 
 ## Description
