@@ -2,6 +2,7 @@
 
 > [!CAUTION]
 > We no longer provide test systems, but you can still use the sample code and tutorial available in this repository.
+> For TechEd on tour, the speakers should share the credentials with you.
 
 # AI180 - Build your own generative AI scenario in a Snap
 
