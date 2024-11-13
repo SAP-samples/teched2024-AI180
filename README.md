@@ -1,5 +1,8 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2024-AI180)](https://api.reuse.software/info/github.com/SAP-samples/teched2024-AI180)
 
+> [!CAUTION]
+> We no longer provide test systems, but you can still use the sample code and tutorial available in this repository.
+
 # AI180 - Build your own generative AI scenario in a Snap
 
 ## Description
