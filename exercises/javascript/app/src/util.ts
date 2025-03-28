@@ -1,7 +1,6 @@
 /**
  * Converts line breaks in a string to HTML <br> tags.
  * This is useful for preserving line breaks when displaying text in HTML.
- * 
  * @param input - The string to process.
  * @returns The input string with line breaks replaced by <br> tags, or an empty string if input is null or undefined.
  */
