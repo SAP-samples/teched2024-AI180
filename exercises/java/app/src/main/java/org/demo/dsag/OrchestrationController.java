@@ -32,7 +32,7 @@ class OrchestrationController {
       new OrchestrationModuleConfig().withLlmConfig(GEMINI_1_5_FLASH.withParam(TEMPERATURE, 0.0));
 
   @GetMapping("/simple")
-  String completion(
+  String simple(
       @Nonnull @RequestParam(value = "famousPhrase", required = false, defaultValue = "Hello World!" ) final String famousPhrase
   ) {
     return "TODO";
@@ -47,14 +47,14 @@ class OrchestrationController {
 
   @GetMapping("/filtering")
   @Nonnull
-  String inputFiltering(
+  String filtering(
       @Nonnull @RequestParam(value = "policy", required = false, defaultValue = "6") final AzureFilterThreshold policy
   ) {
     return "TODO";
   }
 
   @GetMapping("/stream")
-  Flux<String> streamChatCompletion(
+  Flux<String> stream(
       @Nonnull @RequestParam(value = "topic", required = false, defaultValue = "Developing a software project" ) final String topic
   ) {
     var stream = Stream.of("TODO");
