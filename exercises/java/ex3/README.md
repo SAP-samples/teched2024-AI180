@@ -25,7 +25,7 @@ return result.getContent();
 > We added an input filter using the convenient method `withInputFiltering` with `AzureContentFilter` to block request content based on a predefined sensitivity level.
 
 ### 3. Restart the Application
-Save your changes and wait for the application to restart automatically.
+Save your changes and restart the application.
 
 ### 4. Check the LLM Response
 Open your browser and visit http://localhost:8080/orchestration/filtering. 

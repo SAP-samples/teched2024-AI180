@@ -30,7 +30,7 @@ return result.getContent();
 > - When calling the chat completion endpoint, the static template is provided in combination with the prompt including the populated language parameter.
 
 ### 3. Restart the Application
-Save your changes and wait for the application to restart automatically.
+Save your changes and restart the application.
 
 ### 4. Check the LLM Response
 Open your browser and visit http://localhost:8080/orchestration/template. 

@@ -27,7 +27,7 @@ return Flux.fromStream(stream).publishOn(Schedulers.parallel());
 > The convenience method `streamChatCompletion` returns a `Stream<String`, that we only need to transform to non-blocking `Flux<String>` for Spring Boot to consume.
 
 ### 3. Restart the Application
-Save your changes and wait for the application to restart automatically.
+Save your changes and restart the application.
 
 ### 4. Check the LLM Response
 Open your browser and visit http://localhost:8080/orchestration/stream. 
