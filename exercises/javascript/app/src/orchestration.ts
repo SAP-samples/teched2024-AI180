@@ -101,7 +101,7 @@ async function orchestrationCompletionFiltering(): Promise<string> {
 
   try {
     const response = await orchestrationClient.chatCompletion();
-    return response.getContent() ?? 'No content returned';
+    return response.getContent()!;
   } catch (error: any) {
     console.error('Error in orchestrationCompletionFiltering:', error);
     return `Error: ${error.response?.data ? JSON.stringify(error.response.data) : error.message}`;
