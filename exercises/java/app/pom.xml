@@ -41,11 +41,6 @@
         <!-- scope "compile" -->
         <dependency>
             <groupId>com.sap.ai.sdk</groupId>
-            <artifactId>core</artifactId>
-            <version>${ai-sdk.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sap.ai.sdk</groupId>
             <artifactId>orchestration</artifactId>
             <version>${ai-sdk.version}</version>
         </dependency>
