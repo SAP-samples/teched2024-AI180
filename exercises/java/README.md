@@ -1,4 +1,4 @@
-# Use SAP Cloud SDK for AI (JavaScript)
+# Use SAP Cloud SDK for AI (Java)
 
 This track introduces attendees to using orchestration capabilities of SAP Generative AI Hub using the [SAP Cloud SDK for AI (Java)](https://github.com/SAP/ai-sdk-java).
 You can find all mentioned features and some most samples in the [SDK documentation portal](https://sap.github.io/ai-sdk/).

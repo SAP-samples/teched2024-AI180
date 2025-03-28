@@ -11,9 +11,9 @@ You'll see one optional function-argument `policy`, provided as request paramete
 It represents the sensitivity level for the content input filter, with default value `ALLOW_ALL` indicates no filtering on user messages.
 It is used to enable a dynamic prompt handling for the orchestration service request.
 
-Type or uncomment the following code in the function `filtering` to enable input filtering:
+Type the following code in the function `filtering` to enable input filtering:
 
-```typescript
+```java
 var prompt = new OrchestrationPrompt("'We shall spill blood tonight', said the operator in-charge.");
 var filterConfig = new AzureContentFilter().hate(policy).selfHarm(policy).sexual(policy).violence(policy);
 var configWithFilter = config.withInputFiltering(filterConfig);
@@ -59,21 +59,15 @@ Repeat [step 3](#3-restart-the-application) and [step 4](#4-check-the-llm-respon
 > As the input filter has been configured in the most tolerant level, you might want to add an output filter, to make sure potential harmful content from the LLM will be filtered before sending back to the user.
 > 
 > This is an optional exercise for you.
-> To find some clues, you can either check our [documentation on Orchestration prompt filtering](https://sap.github.io/ai-sdk/docs/java/guides/orchestration-chat-completion#filtering).
+> To find some clues, you can check our [documentation on Orchestration prompt filtering](https://sap.github.io/ai-sdk/docs/java/guides/orchestration-chat-completion#filtering).
 
 ## Summary
 
-**Congratulations on completing the Java hands-on session!**
+**Excellent!**
 
-You’ve successfully tackled all the exercises. 
-Here’s a quick checklist of what you’ve achieved:
-- [x] Ensured that your environment runs the **required minimum Java (JRE17) and Maven** for the SAP Cloud SDK for AI.
-- [x] Learned how to utilize a `.env` file to securely store the service key for local testing.
-- [x] Worked with the **orchestration client** (powered by SAP Cloud SDK for AI), including:
-  - [x] Configuring the **LLM model name**.
-  - [x] Setting up various **model options** for tailored usage.
-  - [x] Managing **system and user prompts** to enhance interaction with the LLM.
-  - [x] Implementing **client-side prompt templating** for more flexible input handling.
-  - [x] Configuring **content filtering** to ensure both input and output data are properly screened.
+Now, let’s take a closer look at the key concepts you’ve learned so far:
+- Configuring **content filtering** to ensure input from user input are properly screened.
+- (Optionally) Configuring **output filtering** to ensure LLM output adheres to your policies.
 
-Feel free to continue your learning journey with the [JavaScript track](../../javascript/README.md)!
+You’re now ready to move on to the next step.
+Continue to [Exercise 4 - Streamed Responses](../ex4/README.md)

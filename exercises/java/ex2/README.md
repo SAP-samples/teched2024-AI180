@@ -41,6 +41,8 @@ You should see a response in the language of your choice.
 > - Model options
 > - Messages to include a system prompt and additional user prompts (templates)
 > - Parameters for populating variables defined in the prompt template
+>
+> You can find further hints in the documentation on [Orchestration prompt templating](https://sap.github.io/ai-sdk/docs/java/guides/orchestration-chat-completion#templating).
 
 ## Summary
 
