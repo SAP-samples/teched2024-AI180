@@ -11,7 +11,7 @@ Open [OrchestrationController](../app/src/main/java/org/demo/dsag/OrchestrationC
 You'll see one optional function-argument `language`, provided as request parameter.
 It is used to enable a dynamic prompt for the orchestration service request.
 
-Type or uncomment the following code in the function `template`:
+Type the following code in the function `template`:
 
 ```java
 var template = Message.user("Reply with 'Orchestration Service is working!' in {{?language}}");
