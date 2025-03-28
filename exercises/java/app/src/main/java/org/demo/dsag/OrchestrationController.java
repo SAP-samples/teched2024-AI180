@@ -33,7 +33,7 @@ class OrchestrationController {
 
   @GetMapping("/simple")
   String simple(
-      @Nonnull @RequestParam(value = "famousPhrase", required = false, defaultValue = "Hello World!" ) final String famousPhrase
+      @Nonnull @RequestParam(value = "phrase", required = false, defaultValue = "Hello World!" ) final String phrase
   ) {
     return "TODO";
   }
