@@ -24,8 +24,8 @@
   },
   "dependencies": {
     "@sap-ai-sdk/orchestration": "1.10.0",
-    "express": "4.21.0",
-    "dotenv": "16.4.5"
+    "dotenv": "16.4.5",
+    "express": "^4.21.2"
   },
   "devDependencies": {
     "@sap-cloud-sdk/eslint-config": "3.21.0",
