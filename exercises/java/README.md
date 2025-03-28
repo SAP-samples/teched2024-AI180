@@ -54,3 +54,10 @@ The exercises demonstrate how to use the SAP generative AI hub SDK to interact w
 - [Exercise 4 - Streamed Responses](ex4/README.md)
 
 Start from [here](./ex0/README.md).
+
+### Troubleshooting
+
+If you encounter errors, please look closely at the exceptions and stacktraces.
+
+For detailed HTTP context, you can enable the debug logging for different packages in the `src/main/resources/application.properties` file.
+Use `DEBUG` instead of `WARN` to extract verbose logs.
