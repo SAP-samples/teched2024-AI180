@@ -42,12 +42,24 @@ You should see a Swagger UI page with the API documentation for your _Spring Boo
 Feel free to explore the site and **try out** the different endpoints.
 
 
-### Troubleshooting:
+#### Troubleshooting:
 If you encounter errors, please look closely at the exception.
 And try checking if port 8080 is in use:
 ```shell
 lsof -i :8080
 ```
+
+### 6. Orchestration Client Configuration
+
+Open [OrchestrationController](../app/src/main/java/org/demo/dsag/OrchestrationController.java) file and find the two constants declaring the `OrchestrationClient` and the `OrchestrationModuleConfig` objects.
+They are application-scoped, immutable objects and are available to all endpoints of your application.
+
+By default, they make sure the current setup works as expected for default LLM model access, e.g.
+* lookup environment variables for service key
+* check connectivity and check service availability
+
+Feel free to explore the different available models for Orchestration service, as well as the different LLM parameters that can be set.
+Please note, not all parameters are respected in all models.
 
 ## Summary 
 **Congratulations!**
