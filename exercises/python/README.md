@@ -32,6 +32,7 @@ The exercises are comprised of notebooks demonstrating how to use the SAP genera
 
 - [Exercise 1 - Orchestration Templating](./ex1.ipynb)
 - [Exercise 2 - Orchestration Content Filtering](./ex2.ipynb)
-- [Exercise 3 - Orchestration Chatbot](./ex3.ipynb)
+- [Exercise 3 - Data Masking](./ex3.ipynb)
+- [Exercise 4 - Orchestration Chatbot](./ex4.ipynb)
 
 Start the exercises [here](./ex1.ipynb).
