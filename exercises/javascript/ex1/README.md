@@ -11,7 +11,7 @@ Type or uncomment the following code within the function `orchestrationCompletio
 ```typescript
 const orchestrationClient = new OrchestrationClient({
     llm: {
-        model_name: 'meta--llama3-70b-instruct',
+        model_name: 'gpt-35-turbo',
         model_params: { max_tokens: 1000 }
     },
     templating: {
