@@ -26,7 +26,7 @@ const orchestrationClient = new OrchestrationClient({
 
 const response = await orchestrationClient.chatCompletion();
 
-return replaceLineBreakWithBR(response.getContent()!);
+return convertLineBreaksToHtml(response.getContent()!);
 ```
 > [!NOTE]
 > The code snippet does the following:
