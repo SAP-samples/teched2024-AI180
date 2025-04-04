@@ -1,34 +1,52 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2024-AI180)](https://api.reuse.software/info/github.com/SAP-samples/teched2024-AI180)
 
 > [!CAUTION]
-> We no longer provide test systems, but you can still use the sample code and tutorial available in this repository.
+> Access to test systems are considered temporal.
+> However, in all cases you can still use the sample code and tutorial available in this repository.
 > 
-> For TechEd on tour, the speakers should share the credentials with you.
+> If you are part of a workshop session, the speakers will share the credentials with you.
 
 # AI180 - Build your own generative AI scenario in a Snap
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2024 session ["AI180 - Build your own generative AI scenario in a Snap"](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722557682293001fTqe).
+This repository contains combined material from multiple sessions:
+* SAP TechEd 2024 ["AI180 - Build your own generative AI scenario in a Snap"](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722557682293001fTqe).
+* DSAG TechXchange 2025 ["H35: Create Your Generative AI Scenario with Ease​"](https://dsagtechxchange.plazz.net/)
 
 ## Overview
 
-This session introduces you to integrating orchestration capabilities of Generative AI Hub, SAP AI Core, into your own scenarios using SAP Cloud SDK for AI (JavaScript) or SAP generative AI hub SDK (Python).
+This session introduces you to integrating orchestration capabilities of Generative AI Hub, SAP AI Core, into your own scenarios using SAP Cloud SDK for AI (JavaScript/Java) or SAP generative AI hub SDK (Python).
 Accordingly, this session offers two parallel tracks:
 
-- [SAP Cloud SDK for AI (JavaScript)](exercises/javascript/README.md)
 - [SAP generative AI hub SDK (Python)](exercises/python/README.md)
+- [SAP Cloud SDK for AI (JavaScript)](exercises/javascript/README.md)
+- [SAP Cloud SDK for AI (Java)](exercises/java/README.md)
 
-Both tracks cover identical core concepts and practical applications, differing only in the programming language and SDK utilized. You may choose the track that best aligns with your expertise or technology stack. You may also opt to experience both tracks to broaden your understanding.
+All tracks cover identical core concepts and practical applications, differing only in the programming language and SDK utilized. You may choose the track that best aligns with your expertise or technology stack. You may also opt to experience multiple tracks to broaden your understanding.
 
 By the end of this session, you will have gained practical experience in leveraging these powerful SDKs to enhance your AI-driven solutions, regardless of your chosen programming environment. Join the session to unlock the full potential of Generative AI in your projects and stay at the forefront of AI integration.
+
+## Get started
+
+Depending on the session, there may be different onboarding steps.
+
+<details><summary>DSAG TechXchange 2025</summary>
+
+* Please follow the instructions of the speakers.
+* Upon sending an email to a specific address you will receive the required service key.
+* It will enable you to interact with live systems.
+
+</details>
+
+<details><summary>SAP TechEd 2024</summary>
 
 > [!IMPORTANT]  
 > - As part of this **Jump Start** session, we are offering free access to limited number of hands-on test systems, for limited duration.
 > - To receive your test system, you must follow the below outlined process for submitting a request.
 
 > [!WARNING]
-> ## Disclaimer
+> ### Disclaimer
 > 
 > While requesting for access to hands-on test systems, note the following terms:
 > 1. **Single Request Policy**: Please submit only one request per individual. Submitting requests on behalf of others is strictly **prohibited**.
@@ -51,7 +69,7 @@ By the end of this session, you will have gained practical experience in leverag
 > - Before beginning the exercises, you’ll need to provide system information. Instead of using the hands-on test system provided for this tutorial, use your own AI Core instance details, such as the AI Core client ID, secret, and authentication URL.
 > - If you’re running your application on BTP rather than locally, the SDKs will automatically retrieve your AI Core instance information from the VCAP_SERVICES environment variable. 
 
-## How to Start
+### How to Start
 1. **Apply for the Test Systems**:
     - Use this [template](#template-for-requesting-the-test-system), fill in your information and send it to `teched.2024.ai180.registration.bot@sap.com`.
 2. **Clone the Repository**:
@@ -72,6 +90,8 @@ Email Body:
 - Company: <Your-Company-Name>
 - Business Email Address: <Your-Business-Email-Address>
 ```
+
+</details>
 
 ## Contributing
 
