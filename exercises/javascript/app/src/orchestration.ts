@@ -1,3 +1,8 @@
+import {
+  OrchestrationClient,
+  buildAzureContentSafetyFilter
+} from '@sap-ai-sdk/orchestration';
+import { convertLineBreaksToHtml } from './util.js';
 
 /**
  * Create different types of orchestration requests.
