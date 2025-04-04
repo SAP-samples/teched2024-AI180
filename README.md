@@ -40,34 +40,32 @@ Depending on the session, there may be different onboarding steps.
 </details>
 
 <details><summary>SAP TechEd 2024</summary>
+    
+Please note:
+* As part of this **Jump Start** session, we are offering free access to limited number of hands-on test systems, for limited duration.
+* To receive your test system, you must follow the below outlined process for submitting a request.
 
-> [!IMPORTANT]  
-> - As part of this **Jump Start** session, we are offering free access to limited number of hands-on test systems, for limited duration.
-> - To receive your test system, you must follow the below outlined process for submitting a request.
 
-> [!WARNING]
-> ### Disclaimer
-> 
-> While requesting for access to hands-on test systems, note the following terms:
-> 1. **Single Request Policy**: Please submit only one request per individual. Submitting requests on behalf of others is strictly **prohibited**.
-> 1. **Limited Availability**: Access to the test system is limited to the first **100** applications only. Requests submitted before the start of our session, AI180, will not be considered to ensure fairness. If you are not among the first 100 applicants, you may not receive a test system.
-> 1. **Email Notification**: If approved, you will receive system access details via email within **24 hours**.
-> 1. **System Duration**: The test system will be disabled at 17:00 CEST on Wed, ~Oct 16~ Oct 31 (updated).
-> 1. **Token and Rate Limits**: Each large language model (LLM) used in the exercises has a fixed input and output token limit (smaller than the limit available in production scenarios). In addition, there is a global rate limit per minute for number of requests made.
-> 1. **Testing/Learning Purposes Only**: The test system is intended solely for testing or learning purposes and **not for any productive or commercial use**.
-> 1. **Malicious Usage**: Any detection of malicious usage will result in immediate termination of your test system access. Depending on the severity of the abuse, legal action may be pursued. An example of malicious behavior includes repeatedly hitting the rate limit every minute, for more than 8 hours a day.
-> 1. **Available Models**: We currently offer two large language models for testing: `gemini-1.5-flash` and `meta-llama3-70b-instruct`.
-> 1. **Feature Changes**: Do not make any business decisions on the contents of this exercise. SAP reserves the right to change or deprecate any feature of the Orchestration Service in future, without any prior notifiation.
+### Disclaimer
+ 
+While requesting for access to hands-on test systems, note the following terms:
+1. **Single Request Policy**: Please submit only one request per individual. Submitting requests on behalf of others is strictly **prohibited**.
+1. **Limited Availability**: Access to the test system is limited to the first **100** applications only. Requests submitted before the start of our session, AI180, will not be considered to ensure fairness. If you are not among the first 100 applicants, you may not receive a test system.
+1. **Email Notification**: If approved, you will receive system access details via email within **24 hours**.
+1. **System Duration**: The test system will be disabled at 17:00 CEST on Wed, ~Oct 16~ Oct 31 (updated).
+1. **Token and Rate Limits**: Each large language model (LLM) used in the exercises has a fixed input and output token limit (smaller than the limit available in production scenarios). In addition, there is a global rate limit per minute for number of requests made.
+1. **Testing/Learning Purposes Only**: The test system is intended solely for testing or learning purposes and **not for any productive or commercial use**.
+1. **Malicious Usage**: Any detection of malicious usage will result in immediate termination of your test system access. Depending on the severity of the abuse, legal action may be pursued. An example of malicious behavior includes repeatedly hitting the rate limit every minute, for more than 8 hours a day.
+1. **Available Models**: We currently offer two large language models for testing: `gemini-1.5-flash` and `meta-llama3-70b-instruct`.
+1. **Feature Changes**: Do not make any business decisions on the contents of this exercise. SAP reserves the right to change or deprecate any feature of the Orchestration Service in future, without any prior notifiation.
 
-> [!TIP]
-> Based on the number of hands-on testing requests and system usage, we may be able to grant access to additional applicants and extend the testing duration. In such cases, we will update this README accordingly, and early applicants on the waiting list will receive access details via email.
-
-> [!NOTE]
-> If you have your own AI Core instances for consuming Generative AI Hub capabilities, you can follow this tutorial using those instances.
-> Please make the following adjustments:
-> - You need to create a deployment for orchestration by referring the [documentation](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/create-deployment-for-orchestration?locale=en-US).
-> - Before beginning the exercises, you’ll need to provide system information. Instead of using the hands-on test system provided for this tutorial, use your own AI Core instance details, such as the AI Core client ID, secret, and authentication URL.
-> - If you’re running your application on BTP rather than locally, the SDKs will automatically retrieve your AI Core instance information from the VCAP_SERVICES environment variable. 
+Please note:
+* Based on the number of hands-on testing requests and system usage, we may be able to grant access to additional applicants and extend the testing duration. In such cases, we will update this README accordingly, and early applicants on the waiting list will receive access details via email.
+* If you have your own AI Core instances for consuming Generative AI Hub capabilities, you can follow this tutorial using those instances.
+  Please make the following adjustments:
+    * You need to create a deployment for orchestration by referring the [documentation](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/create-deployment-for-orchestration?locale=en-US).
+    * Before beginning the exercises, you’ll need to provide system information. Instead of using the hands-on test system provided for this tutorial, use your own AI Core instance details, such as the AI Core client ID, secret, and authentication URL.
+    * If you’re running your application on BTP rather than locally, the SDKs will automatically retrieve your AI Core instance information from the VCAP_SERVICES environment variable. 
 
 ### How to Start
 1. **Apply for the Test Systems**:
